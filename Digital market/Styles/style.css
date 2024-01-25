@@ -48,7 +48,6 @@ nav ul {
 }
 
 nav li {
-    transition: all 1s;
     padding: 0.5rem 0.8rem;
 }
 
@@ -56,13 +55,14 @@ nav li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
+    transition: all 0.5s;
 }
 
 nav li:nth-child(1) a {
     color: #FE3F40;
 }
 
-nav li:hover {
+nav li:hover a{
     color: #FE3F40;
 }
 
@@ -81,6 +81,47 @@ nav button:hover {
     background: #03A4ED;
 }
 
+/* Header Content Styles */
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15rem 15rem 8rem;
+    align-items: center;
+}
+
+.header-content .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    max-width: 45%;
+}
+
+.header-content .content h3{
+    color: #FE3F40;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header-content .content h1{
+    color: #2A2A2A;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+
+.header-content .content p{
+    color: #2A2A2A;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.header-content .content p a{
+    color: #03A4ED;
+    text-decoration: none;
+}
 
 /* REsponsive for the mobile view */
 
