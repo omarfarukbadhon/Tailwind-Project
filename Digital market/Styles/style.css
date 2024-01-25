@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 /* Navbar Styles */
 
-nav{
+nav {
     padding: 2rem 15rem;
     display: flex;
     justify-content: space-between;
@@ -19,50 +19,54 @@ nav{
     right: 0;
 }
 
-nav h1{
+nav .menubar >div {
+    display: none;
+}
+
+nav h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #03A4ED;
     letter-spacing: 1rem;
 }
 
-nav span{
+nav span {
     color: #FE3F40;
 }
 
-nav .menu{
+nav .menu {
     display: flex;
     gap: 2rem;
     align-items: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 1.5rem;
 }
 
-nav li{
+nav li {
     transition: all 1s;
     padding: 0.5rem 0.8rem;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
 }
 
-nav li:nth-child(1) a{
+nav li:nth-child(1) a {
     color: #FE3F40;
 }
 
-nav li:hover{
+nav li:hover {
     color: #FE3F40;
 }
 
-nav button{
+nav button {
     padding: 0.8rem 1.2rem;
     color: white;
     background: #FE3F40;
@@ -73,6 +77,41 @@ nav button{
     cursor: pointer;
 }
 
-nav button:hover{
+nav button:hover {
     background: #03A4ED;
+}
+
+
+/* REsponsive for the mobile view */
+
+@media screen and (max-width: 576px) {
+
+    /* Navbar Styles */
+
+    nav {
+        padding: 1rem 0.5rem;
+    }
+
+    nav .menubar{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .menubar >div  {
+        color: black;
+        display: inline-flex;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
